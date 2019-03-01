@@ -1,6 +1,6 @@
 package kafkapublisher.api;
 
-import domain.Message;
+import kafkapublisher.domain.Message;
 import kafkapublisher.application.Publisher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;

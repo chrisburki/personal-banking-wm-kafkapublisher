@@ -1,7 +1,5 @@
 package kafkapublisher.application;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
@@ -13,8 +11,6 @@ import org.springframework.util.concurrent.ListenableFutureCallback;
 @Component
 public class Publisher {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(Publisher.class);
-
     @Autowired
     private KafkaTemplate<String, String> kafkaTemplate;
 
@@ -23,8 +19,6 @@ public class Publisher {
     private String topicName;
 
     public void sendMessage(String message) {
-
-        LOGGER.info("sending data='{}' to topic='{}'", message, topicName);
 
         ListenableFuture<SendResult<String, String>> future = kafkaTemplate.send(topicName, message);
 

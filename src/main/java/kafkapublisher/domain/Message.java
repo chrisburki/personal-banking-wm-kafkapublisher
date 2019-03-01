@@ -1,4 +1,4 @@
-package domain;
+package kafkapublisher.domain;
 
 public class Message {
     private final long id;
