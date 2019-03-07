@@ -1,4 +1,4 @@
-package kafkapublisher.configuration;
+package kafkapublisher.domain.publisher;
 
 import org.apache.kafka.clients.admin.AdminClientConfig;
 import org.apache.kafka.clients.admin.NewTopic;

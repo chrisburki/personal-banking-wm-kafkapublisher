@@ -1,8 +1,7 @@
-package kafkapublisher.api;
+package kafkapublisher.infrastructure.api;
 
-import kafkapublisher.domain.Message;
-import kafkapublisher.application.Publisher;
-import org.springframework.beans.factory.annotation.Autowired;
+import kafkapublisher.domain.message.Message;
+import kafkapublisher.application.PublisherService;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -12,8 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/publisher")
 public class PublisherController {
 
-    @Autowired
-    private Publisher publisher;
+    private final PublisherService publisherService;
+
+    PublisherController(PublisherService publisherService) {
+        this.publisherService = publisherService;
+    }
 
 
     @RequestMapping(value = "/message", method = RequestMethod.POST)
@@ -21,7 +23,7 @@ public class PublisherController {
         System.out.println("Message received");
         System.out.println("Message Content: " + message.getContent());
 
-        publisher.sendMessage(message.getContent());
+        publisherService.sendMessage(message.getContent());
         return message;
     }
 
