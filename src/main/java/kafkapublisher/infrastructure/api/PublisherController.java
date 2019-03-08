@@ -18,7 +18,7 @@ public class PublisherController {
     }
 
 
-    @RequestMapping(value = "/message", method = RequestMethod.POST)
+    @RequestMapping(value = "/messages", method = RequestMethod.POST)
     public Message sendMessage(@RequestBody Message message) {
         System.out.println("Message received");
         System.out.println("Message Content: " + message.getContent());
