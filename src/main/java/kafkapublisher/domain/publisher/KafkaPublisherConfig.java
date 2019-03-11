@@ -18,9 +18,16 @@ public class KafkaPublisherConfig {
     @Value(value = "${kafka.bootstrapServerAddress}")
     private String bootstrapServerAddress;
 
+    @Value("${KAFKA_SERVICE_HOST}")
+    private String kafkaHost;
+
+    @Value("${KAFKA_SERVICE_PORT}")
+    private String kafkaPort;
+
     @Bean
     public ProducerFactory<String, String> producerFactory() {
         Map<String, Object> configProps = new HashMap<>();
+        bootstrapServerAddress = kafkaHost + ":" + kafkaPort;
         configProps.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServerAddress);
         configProps.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         configProps.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
