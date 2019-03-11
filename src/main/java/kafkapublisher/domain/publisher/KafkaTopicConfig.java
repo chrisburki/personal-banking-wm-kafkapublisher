@@ -14,15 +14,23 @@ import java.util.Map;
 public class KafkaTopicConfig {
 
     @Value(value = "${kafka.bootstrapServerAddress}")
-    private String bootstrapAddress;
+    private String bootstrapServerAddress;
 
     @Value(value = "${message.topic.name}")
     private String topicName;
 
+    @Value("${KAFKA_SERVICE_HOST}")
+    private String kafkaHost;
+
+    @Value("${KAFKA_SERVICE_PORT}")
+    private String kafkaPort;
+
     @Bean
     public KafkaAdmin kafkaAdmin() {
         Map<String, Object> configs = new HashMap<>();
-        configs.put(AdminClientConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapAddress);
+        bootstrapServerAddress = kafkaHost + ":" + kafkaPort;
+        System.out.println("bootstrapServerAddress: " + bootstrapServerAddress + " = " + kafkaHost + ":" + kafkaPort);
+        configs.put(AdminClientConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServerAddress);
         return new KafkaAdmin(configs);
     }
 

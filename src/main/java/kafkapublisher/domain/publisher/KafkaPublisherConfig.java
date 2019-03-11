@@ -28,6 +28,7 @@ public class KafkaPublisherConfig {
     public ProducerFactory<String, String> producerFactory() {
         Map<String, Object> configProps = new HashMap<>();
         bootstrapServerAddress = kafkaHost + ":" + kafkaPort;
+        System.out.println("bootstrapServerAddress: " + bootstrapServerAddress + " = " + kafkaHost + ":" + kafkaPort);
         configProps.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServerAddress);
         configProps.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         configProps.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class);

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ee65e94-56c6-4667-b2c3-8c2ac8517958" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kafkapublisher/domain/consumer/KafkaConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kafkapublisher/domain/consumer/KafkaConsumerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kafkapublisher/domain/publisher/KafkaPublisherConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kafkapublisher/domain/publisher/KafkaPublisherConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kafkapublisher/domain/publisher/KafkaTopicConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kafkapublisher/domain/publisher/KafkaTopicConfig.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -51,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/kafkapublisher/domain/publisher/KafkaPublisherConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="61" lean-forward="true" selection-start-line="28" selection-start-column="58" selection-end-line="29" selection-end-column="61" />
+            <state relative-caret-position="408">
+              <caret line="24" column="29" lean-forward="true" selection-start-line="20" selection-end-line="24" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/kafkapublisher/domain/publisher/KafkaTopicConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+            <state relative-caret-position="544">
+              <caret line="32" column="86" selection-start-line="32" selection-start-column="86" selection-end-line="32" selection-end-column="86" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,11 +96,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/kafkapublisher/domain/consumer/KafkaConsumerConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="61" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
+            <state relative-caret-position="561">
+              <caret line="33" selection-start-line="32" selection-end-line="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kafkapublisher/application/ConsumerService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="67" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -151,10 +163,10 @@
         <option value="$PROJECT_DIR$/src/main/java/kafkapublisher/api/PublisherController.java" />
         <option value="$PROJECT_DIR$/src/main/java/kafkapublisher/application/PublisherService.java" />
         <option value="$PROJECT_DIR$/src/main/java/kafkapublisher/application/ConsumerService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kafkapublisher/domain/publisher/KafkaTopicConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/kafkapublisher/infrastructure/api/PublisherController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kafkapublisher/domain/publisher/KafkaPublisherConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/kafkapublisher/domain/consumer/KafkaConsumerConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kafkapublisher/domain/publisher/KafkaPublisherConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kafkapublisher/domain/publisher/KafkaTopicConfig.java" />
       </list>
     </option>
   </component>
@@ -370,16 +382,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kafkapublisher/application/ConsumerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kafkapublisher/domain/message/Message.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -415,16 +417,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kafkapublisher/domain/publisher/KafkaTopicConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kafkapublisher/infrastructure/api/PublisherController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -445,10 +437,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kafkapublisher/domain/publisher/KafkaPublisherConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/kafkapublisher/application/ConsumerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="61" lean-forward="true" selection-start-line="28" selection-start-column="58" selection-end-line="29" selection-end-column="61" />
+        <state relative-caret-position="408">
+          <caret line="24" column="67" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -457,8 +449,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kafkapublisher/domain/consumer/KafkaConsumerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="61" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
+        <state relative-caret-position="561">
+          <caret line="33" selection-start-line="32" selection-end-line="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kafkapublisher/domain/publisher/KafkaPublisherConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="29" lean-forward="true" selection-start-line="20" selection-end-line="24" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kafkapublisher/domain/publisher/KafkaTopicConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="86" selection-start-line="32" selection-start-column="86" selection-end-line="32" selection-end-column="86" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
