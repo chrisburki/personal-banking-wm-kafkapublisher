@@ -19,17 +19,17 @@ public class KafkaTopicConfig {
     @Value(value = "${message.topic.name}")
     private String topicName;
 
-    @Value("${KAFKA_SERVICE_HOST}")
-    private String kafkaHost;
+//    @Value("${KAFKA_SERVICE_HOST}")
+//    private String kafkaHost;
 
-    @Value("${KAFKA_SERVICE_PORT}")
-    private String kafkaPort;
+//    @Value("${KAFKA_SERVICE_PORT}")
+//    private String kafkaPort;
 
     @Bean
     public KafkaAdmin kafkaAdmin() {
         Map<String, Object> configs = new HashMap<>();
-        bootstrapServerAddress = kafkaHost + ":" + kafkaPort;
-        System.out.println("bootstrapServerAddress: " + bootstrapServerAddress + " = " + kafkaHost + ":" + kafkaPort);
+//        bootstrapServerAddress = kafkaHost + ":" + kafkaPort;
+        System.out.println("bootstrapServerAddress: " + bootstrapServerAddress);
         configs.put(AdminClientConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServerAddress);
         return new KafkaAdmin(configs);
     }
