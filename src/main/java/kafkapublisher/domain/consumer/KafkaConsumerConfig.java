@@ -20,17 +20,17 @@ public class KafkaConsumerConfig {
     @Value(value = "${kafka.bootstrapServerAddress}")
     private String bootstrapServerAddress;
 
-    @Value("${KAFKA_SERVICE_HOST}")
-    private String kafkaHost;
+//    @Value("${KAFKA_SERVICE_HOST}")
+//    private String kafkaHost;
 
-    @Value("${KAFKA_SERVICE_PORT}")
-    private String kafkaPort;
+//    @Value("${KAFKA_SERVICE_PORT}")
+//    private String kafkaPort;
 
     @Bean
     public ConsumerFactory<String, String> consumerFactory() {
         Map<String, Object> props = new HashMap<>();
-        bootstrapServerAddress = kafkaHost + ":" + kafkaPort;
-        System.out.println("bootstrapServerAddress: " + bootstrapServerAddress + " = " + kafkaHost + ":" + kafkaPort);
+//        bootstrapServerAddress = kafkaHost + ":" + kafkaPort;
+        System.out.println("bootstrapServerAddress: " + bootstrapServerAddress);
         props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServerAddress);
         props.put(ConsumerConfig.GROUP_ID_CONFIG, "group_id");
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
